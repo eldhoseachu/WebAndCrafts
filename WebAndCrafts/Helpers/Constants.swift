@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import UIKit
+
+class CollectionCellIdentifiers {
+    static let kCategoryCollCell    = "CategoryCollCell"
+    static let kBannerCollCell      = "BannerCollCell"
+    static let kProductCollCell     = "ProductCollCell"
+}
+
+extension String {
+    var strikethrough: NSAttributedString {
+        return NSAttributedString(string: self, attributes: [.strikethroughStyle: NSNumber(value: NSUnderlineStyle.single.rawValue as Int)])
+
+    }
+}
